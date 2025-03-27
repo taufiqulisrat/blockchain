@@ -1,0 +1,35 @@
+**Panduan Instalasi Electrum via AppImage di Linux**
+
+1. **Download Electrum AppImage:**  
+   - Unduh file AppImage dari situs resmi Electrum: [https://electrum.org](https://electrum.org)
+
+2. **Buka Terminal dan Arahkan ke Folder Unduhan:**  
+   ```bash
+   cd ~/Downloads
+   ```
+
+3. **Ubah Izin File Agar Bisa Dieksekusi:**  
+   ```bash
+   chmod +x electrum-4.5.8-x86_64.AppImage
+   ```
+
+4. **Jalankan Aplikasi Electrum:**  
+   ```bash
+   ./electrum-4.5.8-x86_64.AppImage
+   ```
+   Jika muncul error `error loading libfuse.so.2`, instal FUSE dengan perintah:
+   ```bash
+   sudo apt update
+   sudo apt install libfuse2
+   ```
+
+5. **Konfigurasi Wallet:**  
+   - Jika muncul halaman "Seed Extension", masukkan kata tambahan (passphrase) yang aman.
+   - Jika tidak tahu, gunakan kata sederhana, tetapi simpan dengan baik.
+
+6. **Selesai!** Electrum siap digunakan untuk transaksi Bitcoin.
+
+**Catatan:**
+- Pastikan selalu mengunduh Electrum dari sumber resmi.
+- Simpan backup seed phrase dan passphrase di tempat yang aman.
+
